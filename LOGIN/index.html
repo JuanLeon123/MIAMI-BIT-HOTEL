@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Login HotelBIT</title>
+</head>
+
+<body>
+    <nav id="sidemenu" class="menu-collapsed">
+        <div id="header">
+            <div id="menu-btn">
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+            </div>
+        </div>
+        <div id="profile">
+            <div id="photo"><img src="/assets/img/img-miguel-2.jfif" alt=""></div>
+            <div id="name"><span>Miguel Nieto</span></div>
+        </div>
+        <div id="menu-items">
+            <div class="item">
+                <a href="/index.html">
+                    <div class="icon"><i class="fa-solid fa-house"></i></div>
+                    <div class="title"><span>Home</span></div>
+                </a>
+            </div>
+        </div>
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"><i class="fa-solid fa-bed"></i></div>
+                    <div class="title"><span>Rooms</span></div>
+                </a>
+            </div>
+        </div>
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"><i class="fa-solid fa-mobile-retro"></i></div>
+                    <div class="title"><span>Contact</span></div>
+                </a>
+            </div>
+        </div>
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"><i class="fa-solid fa-user-astronaut"></i></div>
+                    <div class="title"><span>Sign in</span></div>
+                </a>
+            </div>
+        </div>
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"><i class="fa-solid fa-user-pen"></i></div>
+                    <div class="title"><span>Sign up</span></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contenedor">
+        <section class="titulo">
+            <h1>Ingresa a tu cuenta registrada en nuestro Hotel</h1>
+        </section>
+        <section>
+            <form action="">
+                <div class="formatos">
+                    <h2>Inicio de sesión</h2>
+                    <div>
+                        <span>Dirección de e-mail</span>
+                        <div>
+                            <input class="tamaño-incorreo" type="email" name="" id="" placeholder="Correo eléctronico">
+                        </div>
+                        <div>
+                            <input class="tamaño-incorreo" type="password" name="" id="" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-tamaño">Iniciar sesión</button>
+                    </div>
+                    <span class="line"><a href="">¿Olvidaste tu contraseña?</a></span>
+                    
+                    <span>Ingresar de otra manera</span>
+                    <section class="opcionesdesesion">
+                            <div class="separacion-in">
+                                <button class="btn-otros"> <img class="tamaño" src="/assets/img/facebook logo.png" alt=""></button>
+                            </div>
+                            <div class="separacion-in">
+                                <button class="btn-otros"> <img class="tamaño" src="/assets/img/google logo.png" alt=""></button>
+                            </div>
+                            <div>
+                                <button class="btn-otros"><img class="tamaño" src="/assets/img/movil logo.png" alt=""></button>
+                            </div>
+                    </section>
+                    <span>Al iniciar sesión estás aceptando nuestros <a href="" >Terminos y condiciones</a>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+            document.querySelector('body').classList.toggle('body-expanded');
+        });
+    </script>
+
+</body>
+
+</html>
